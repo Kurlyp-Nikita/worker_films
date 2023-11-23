@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+<body>
+    <h2>Джанго проект</h2>
+    <a href="{% url 'contacts' %}">К контактом</a>
+    <a href="{% url 'rabotnik' id=0 %}">Работник месяца_1</a>
+    <a href="{% url 'rabotnik' id=1 %}">Работник месяца_2</a>
+    <a href="{% url 'rabotnik' id=2 %}">Работник месяца_3</a>
+</body>
+</html>
+

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Персонаж</title>
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+<body>
+
+    <h1>Персонаж</h1>
+    <h3>{{ name }}</h3>
+    <h3>{{ game }}</h3>
+    <img src="{% static photo %}" width="400">
+    <h3>{{ description }}</h3>
+    <a href="https://ru.wikipedia.org/wiki/Титаник">
+        <h2>ссылка на википедию Титаника</h2>
+    </a>
+    <a href="{% url 'index_1' %}">К "Титанику"</a>
+
+</body>
+</html>
+
+
+

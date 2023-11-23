@@ -1,0 +1,16 @@
+a {
+    display: block;
+}
+
+body {
+    text-align: center;
+}
+
+ol {
+    width: 200px;
+    display: inline-block;
+}
+
+.characters {
+    text-align: center;
+}

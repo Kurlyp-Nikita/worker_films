@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Фильм "Титаник"</title>
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+<body>
+
+    <h1>Фильм "Титаник"</h1>
+    <p>Здесь вы найдете интересную информацию о фильме "Титаник".</p>
+    <h2>Главные герои</h2>
+
+    <div class="characters">
+        <a href="{% url 'jack' id=0 %}">
+            <img src="{% static 'img/jack.jpg' %}" alt="Джек" width="200">
+            <p>Джек</p>
+        </a>
+        <a href="{% url 'jack' id=1 %}">
+            <img src="{% static 'img/rose.jpg' %}" alt="Роуз" width="200">
+            <p>Роуз</p>
+        </a>
+        <a href="{% url 'jack' id=2 %}">
+            <img src="{% static 'img/captain.jpg' %}" alt="Капитан корабля" width="200">
+            <p>Капитан корабля</p>
+        </a>
+            <img src="{% static 'img/ship.jpg' %}" alt="Корабль" width="200">
+            <p>Корабль</p>
+            <img src="{% static 'img/iceberg.jpg' %}" alt="Айсберг" width="200">
+            <p>Айсберг</p>
+    </div>
+
+</body>
+</html>
